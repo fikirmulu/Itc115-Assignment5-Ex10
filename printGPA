@@ -1,0 +1,26 @@
+package test1;
+
+import java.util.Scanner;
+
+public class printGPA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		{
+			 int counts = 0;
+			 double sum = 0.0;
+			 String name ="";
+			  Scanner console = new Scanner(System.in);
+			  System.out.print("Enter a student record: ");
+			  name = console.next();
+			  int numbers= console.nextInt();
+			 
+			 for(int i = 1; i <= numbers; i ++){
+			    sum += console.nextInt();
+			 }
+			 
+			 System.out.println(name + "'s grade is " +  sum/ numbers);
+			}
+	}
+
+}
